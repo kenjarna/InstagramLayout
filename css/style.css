@@ -55,11 +55,6 @@ main {
   max-width: 930px;
 }
 
-.user {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-}
-
 .logo {
   border-radius: 50%;
   width: 70px;
@@ -69,12 +64,29 @@ main {
 .user-info {
   border: 3px dashed blue;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  padding: 10px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+.user-info p {
+  grid-column: 1 / -1;
+}
+
+.user-stats {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-info h1 {
+  margin: 0;
 }
 
 @media (min-width: 700px) {
   .logo {
-    width: 152 px;
+    width: 152px;
   }
 }
 
