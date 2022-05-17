@@ -45,6 +45,11 @@ main {
   max-width: 930px;
 }
 
+.user {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
 .logo {
   border-radius: 50%;
   width: 152px;
