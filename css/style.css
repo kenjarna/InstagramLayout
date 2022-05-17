@@ -48,12 +48,32 @@ main {
 .logo {
   border-radius: 50%;
   width: 152px;
+  justify-self: center;
 }
 
 .user-info {
   border: 3px dashed blue;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .news-feed {
   border: 3px dashed blue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px;
+}
+
+.news-feed img {
+  width: 100%;
+}
+
+.feed-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.feed-nav a {
+  display: block;
+  padding: 10px;
 }
